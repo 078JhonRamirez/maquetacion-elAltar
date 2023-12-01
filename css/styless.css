@@ -1,0 +1,635 @@
+@font-face {
+    font-family: 'comicNue';
+    src: url('../font/comicneuesansid/ComicNeueSansID.ttf');
+}
+
+@font-face {
+    font-family: 'Condensed';
+    src: url('../font/mollen/Mollen\ Personal\ Use-Condensed.otf');
+}
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    /* background-image: linear-gradient(rgba(64, 6, 117, 0.9),rgb(64, 6, 117, 0.2)), url('../img/fondo-header.png'); se genera el degradado de la imagen */
+    background-image: linear-gradient(rgba(63, 6, 117, 0.9), rgba(240, 240, 66, 0.3)), url('../img/fondo-header.png');
+    /*se genera el degradado de la imagen*/
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    /* position: fixed; */
+}
+
+
+header .header__logo {
+    height: 100%;
+    width: 150px;
+    padding: 10px;
+    box-sizing: border-box;
+
+
+}
+
+.header__logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+header>.header__nav {
+    text-align: left;
+    font-size: 1.2rem;
+    font-family: comicNue;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.header__nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.login__header {
+    height: 70%;
+    width: 100px;
+    margin-top: 15px;
+    margin-right: 50px;
+    box-sizing: border-box;
+    text-align: center;
+    border: 1px solid rgba(20, 132, 163, 0.9);
+    background-color: rgba(255, 255, 255, 0.5);
+
+}
+
+.login__header img {
+    width: 80%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* fin del header */
+
+
+
+
+
+
+
+
+/* slider */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.search {
+    padding: 10px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.search i{
+    font-size: 1.5rem;
+    color: #111111;
+}
+
+.search-txt {
+    display: flex;
+    align-items: center;
+}
+
+/* .search-txt i {
+    font-size: 2.5rem;
+    color: #ff0008;
+} */
+
+.search-txt h2 {
+    color: #0A4252;
+    font-size: 2.5rem;
+    margin-left: 10px;
+}
+
+.movies{
+    padding: 0px 0px 10px 0px;
+}
+
+.movies h2 {
+    color: #1484A3;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.swiper {
+    width: 100%;
+
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 250px;
+}
+
+.swiper-slide img{
+    display: block;
+    width: 100%;
+
+}
+
+.icons {
+    padding: 0 350px 50px 350px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.icons i{
+    font-size: 25px;
+    color: #111111;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.icons i:hover{
+    color: #ff0008;
+    background-color: #FEFEFE;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+/* fin slider *
+
+/* Noticia semana */
+
+.semana{
+    padding: 35px;
+    text-align: center;
+}
+
+.semana .titulo__semana{
+    display: inline-block;
+    width: max-content;
+    height: min-content;
+    font-size: 1.2rem;
+    font-weight: 1000;
+    color: #0A4252;
+
+}
+
+/* top */
+.card__container{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+.cards {
+    width: max-content;
+    height: min-content;
+    position: relative;
+}
+
+
+.icon__calificacion{
+    position: absolute;
+    right: 0;
+    padding: 0.2em;
+    font-size: 1.2rem;
+    color: yellow;
+}
+
+.titulo__obra{
+    width: 100%;
+    height: 15px;
+    padding: 2px;
+    text-align: center;
+    color: #fff;
+    background-color: rgb(20, 132, 163);
+}
+
+.titulo__obra h2{
+    margin: 0;
+    font-size: 0.6em;
+    font-family: 'comicNuez';
+
+}
+
+
+
+.icon__calificacion span{
+    color: rgb(34, 236, 47);
+    font-size: 0.7em;
+}
+.card{
+    width: 100%;
+    height: 16.5em;
+    box-sizing: content-box;
+}
+
+.card img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.agregar__favorito{
+    position: absolute;
+    bottom: 0.01px;
+    width: 100%;
+    height: 30px;
+    background-color: rgba(20, 132, 163, .5);
+    text-align: center;
+    padding: 5px;
+}
+
+.agregar__favorito i{
+    color: #ff0008;
+}
+.agregar__favorito i span{
+    color: rgba(255, 255, 255, .7);
+    text-align: left;
+    font-family: 'comicNuez';
+
+    &:hover{
+        cursor: pointer;
+        color: rgb(255, 255, 255);
+    }
+}
+
+
+
+/* fin top */
+
+/* seccion de manga y navegacion */
+.seccion__manga{
+    margin: 40px 25px 40px 25px;
+    padding: 20px;
+    height: max-content;
+    outline: 2px solid #310345;
+}
+
+.sub__navegacion{
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    padding: 1rem;
+    background-color:  rgb(20, 132, 163);
+    margin-bottom: 40px;
+}
+.filtro{
+    display: flex;
+    gap: 10px;
+}
+.texto__filtro{
+    margin: 0;
+    color: #FEFEFE;
+    font-family: 'comicNue';
+
+}
+
+.seleccion__filtro{
+    border: none;
+    border-bottom: 3px solid #6bcfeb;
+    background: none;
+    color: #fff;
+    font-family: 'comicNue';
+    &::selection{
+        border: 2px solid #6bcfeb;
+    }
+}
+
+.seleccion__filtro option{
+    background-color: #6bcfeb;
+}
+
+
+
+.contenedor__manga{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(11rem,1fr));
+    justify-items: center;
+    gap: 1rem;
+}
+
+.form__busqueda{
+    display: inherit;
+}
+
+.form__busqueda label{
+    display: block;
+    background-color: #6bcfeb;
+    color: #FFF;
+    width: 30px;
+    height: 30px;
+    padding: 6px;
+}
+
+.form__busqueda .input__search{
+    height: 30px;
+    border: 1px solid #6bcfeb;
+}
+/* fin del cuerpo */
+
+/* login */
+
+contenedor{
+    width: 100vh;
+    height: max-content;
+}
+.parte__superior{
+    width: 100%;
+    height: 300px;
+    background-color: #310345;
+    position: relative;
+}
+
+.parte__superior::before{
+    content: '';
+    position: absolute;
+    width: 89.5%;
+    border-left: 80px solid transparent;
+    border-right: 80px solid transparent;
+    border-top: 100px solid transparent;
+    border-bottom: 200px solid #fff;
+    border-radius: 25%;
+}
+
+
+
+.subcontenedor__formulario{
+    outline: 2px solid #310345;
+    outline-style: dotted;
+    width: 500px;
+    height: max-content;
+    position: relative;
+    z-index: 1000;
+    left: 35%;
+    top: -110px;
+    padding: 80px 10px 10px 10px;
+}
+
+
+.imagen__superior__formulario{
+    position: relative;
+    background-color: #512c7a;
+    border-radius: 100%;
+    width: 120px;
+    height: 120px;
+    text-align: center;
+    padding: 10px;
+    margin:  10px auto;
+    position: absolute;
+    top: -75px;
+    left: 40%;
+}
+
+.imagen__superior__formulario img{
+    width: 100px;
+    height: 100px;
+}
+
+.form__control{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.titulo__formulario{
+    font-size: 3rem;
+    font-weight: 500;
+    color: #310345;
+    margin-left: 65px;
+}
+
+
+.contenido__form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+    width: 80%;
+}
+
+.contenido__inputs{
+    display: flex;
+}
+
+.contenido__inputs label{
+    padding: 10px;
+    background-color: #512c7a;
+    color: #fff;
+    text-align: center;
+
+}
+
+.contenido__inputs .control__inputs{
+    width: 20rem;
+    padding: 0 0.5em;
+    border: 1px solid #310345;
+    font-family: 'Condensed';
+    font-size: 1.2rem;
+}
+
+.control__inputs:focus{
+    outline: 1px solid #512c7a;
+    height: inherit;
+}
+
+.btn__enviar{
+    padding: 0.6em 3em;
+    background-color: #512c7a;
+    border: none;
+    border-radius: 1.1em;
+    color: #FFF;
+    font-family: 'comicNue';
+    font-size: 1.2rem;
+}
+
+.btn__enviar:hover{
+    padding: 0.7em 3.2em;
+    transition: 0.3s ease-in-out;
+}
+
+
+.modos__acceso{
+    display: flex;
+    justify-content: space-around;
+    gap: 5em;
+}
+
+.recuperar,
+.crear__cuenta{
+    font-family: 'Condensed';
+    font-size: 1.1rem;
+}
+
+.recuperar a, .crear__cuenta a{
+    font-family: 'Condensed';
+    font-size: 1.3rem;
+}
+
+
+
+/* fin login */
+
+
+
+
+
+/* footer */
+
+footer {
+    width: 100%;
+    height: 180px;
+    background-color: #512c7a;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: Condensed;
+}
+
+.footer__nav{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 1.2rem;
+    padding: 0px 25px;
+}
+
+.footer__nav .titulo {
+    color: #fff;
+}
+
+.footer__nav a {
+    color: #fff;
+
+}
+
+.copy {
+    font-weight: bold;
+    color: #fff;
+    position: relative;
+    margin-top: 100px;
+}
+
+.redes__sociales {
+    color: #fff;
+    display: flex;
+    gap: 10px;
+    font-size: 2.5rem;
+    margin-right: 100px;
+    text-align: center;
+
+}
+
+.redes__sociales a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.redes__sociales i{
+    border: 2px solid #fff ;
+    padding: 5px;
+    border-radius: 10px;
+    width: 40px;
+    box-sizing: content-box;
+}
+/* fin del footer */
+
+/* menu hamburguesa */
+.desplegar__menu{
+    display: none;
+    width: 50px;
+    height: 50px;
+}
+
+.cerrar__menu{
+    display: none;
+}
+
+
+
+@media(max-width:991px){
+    
+    /* responsive para slider */
+    body{
+        min-height: 0vh;
+    }
+
+    .search {
+        padding: 30px 30px 0 30px;
+    }
+
+    .movies{
+        padding: 30px;
+    }
+
+    .icons {
+        padding: 30px;
+    }
+    /* fin responsive slider */
+}
+/* fin responsive */
+
+@media screen and (max-width:768px) {
+    .header__nav{
+        opacity: 0;
+        visibility: hidden;
+
+        background-color: #310345;
+        flex-direction: column;
+        width: 10rem;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1009;
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax rgba(0,0,0, .6);
+
+    }
+
+    .header__nav a{
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid white;
+        margin-top: 30px;
+    }
+
+    .header__nav.visible{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .desplegar__menu{
+        display: block;
+    }
+    
+    .cerrar__menu{
+        display: block;
+    }
+    
+}

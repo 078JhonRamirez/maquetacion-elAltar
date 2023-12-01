@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>elAltar</title>
+
+        <!-- icon -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+            integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!-- librerias para el slider -->
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!--*** -->
+
+        <!-- css -->
+        <link rel="stylesheet" href="/css/styless.css">
+
+    </head>
+    <body>
+        <header>
+            <div class="header__logo">
+                <img src="/img/logo.png" alt="ElALtar">
+            </div>
+
+            <button id="abrirVentana" class="desplegar__menu"><i
+                    class="fa-solid fa-bars"></i></button>
+            <nav id="nav" class="header__nav">
+                <button id="cerrarVentana" class="cerrar__menu"><i
+                        class="fa-solid fa-xmark"></i></button>
+                <a href="/index.html">inicio</a>
+                <a href="#">productos</a>
+                <a href="#">Contactanos</a>
+                <a href="#">Blog</a>
+            </nav>
+
+            <nav class="login__header">
+                <a href="#"><img src="/img/logo.png"></a>
+            </nav>
+
+        </header>
+        <!-- fin header -->
+        <div class="contenedor">
+            <div class="parte__superior"></div>
+
+            <section class="subcontenedor__formulario">
+
+                <div class="imagen__superior__formulario">
+                    <img src="/icon/personaje-solid.svg" alt="Tú">
+                </div>
+
+                <form action="#" class="form__control">
+                    <fieldset class="contenido__form">
+                        <legend class="titulo__formulario">Bienvenido</legend>
+
+                        <p class="contenido__inputs">
+                            <label for="input__usuario"><i
+                                    class="fa-solid fa-user"></i></label>
+                            <input type="text" name="usuario"
+                                class="control__inputs" id="input__usuario"
+                                placeholder="Nombre de usuario">
+                        </p>
+
+                        <p class="contenido__inputs">
+                            <label for="input__usuario"><i
+                                    class="fa-solid fa-envelope"></i></label>
+                            <input type="email" name="usuario"
+                                class="control__inputs" id="input__usuario"
+                                placeholder="Correo">
+                        </p>
+
+                        <p class="contenido__inputs">
+                            <label for="input__seguridad"><i
+                                    class="fa-solid fa-lock"></i></label>
+                            <input type="text" name="seguridad"
+                                class="control__inputs" id="input__seguridad"
+                                placeholder="Contraseña">
+                        </p>
+
+                        <p class="contenido__inputs">
+                            <label for="input__seguridad"><i
+                                    class="fa-solid fa-lock"></i></label>
+                            <input type="text" name="seguridad"
+                                class="control__inputs" id="input__seguridad"
+                                placeholder="Repetir Contraseña">
+                        </p>
+
+                        <button class="btn__enviar">Registrarse</button>
+                    </fieldset>
+                </form>
+
+                <div class="modos__acceso">
+                    <p class="recuperar">Recuperar<a href="./recuperar.html">Contraseña</a></p>
+                    <p class="crear__cuenta">¿No tienes Cuenta?<a
+                            href="./registro.html">Registrate</a></p>
+                </div>
+
+            </section>
+
+        </div>
+
+        <!-- footer -->
+        <footer>
+            <nav class="footer__nav">
+                <h3 class="titulo">informacion</h3>
+                <a href class="link">informacion legal</a>
+                <a href class="link">privacida</a>
+            </nav>
+            <div class="copy">
+                <span>&copy; 2023 Todos los derechos reservados | Diseñado por:
+                    <name>Jhon</span>
+                </div>
+
+                <div class="redes__sociales">
+                    <a href class="link__redes"><i id="facebook"
+                            class="fab fa-facebook icono"></i><br /></a>
+                    <a href class="link__redes"><i id="instagram"
+                            class="fab fa-instagram icono"></i></li></a>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+        <script src="./js/funcionalidades.js" defer></script>
+
+    </body>
+</html>
