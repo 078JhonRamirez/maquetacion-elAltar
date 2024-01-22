@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>lectura-manga</title>
+
+        <!-- fuente provisional -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+            rel="stylesheet" />
+
+        <!-- icon -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+            integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer" />
+        <!-- css -->
+
+        <link
+            rel="stylesheet"
+            href="/css/necolas.github.io_normalize.css_8.0.1_normalize.css" />
+        <link rel="stylesheet" href="/css/styless.css" />
+    </head>
+    <body>
+        <header>
+            <div class="header__logo">
+                <img class="resolucion__img" src="/img/logo.png"
+                    alt="ElALtar" />
+            </div>
+
+            <button id="abrirVentana" class="desplegar__menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <nav id="nav" class="header__nav">
+                <button id="cerrarVentana" class="cerrar__menu">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+                <a href="/index.html">inicio</a>
+                <a href="#">productos</a>
+                <a href="#">Contactanos</a>
+                <a href="#">Blog</a>
+            </nav>
+
+            <nav class="login__header">
+                <a href="/auth/login.html"><img class="resolucion__img"
+                        src="/img/logo.png" alt="elAltar" /></a>
+            </nav>
+        </header>
+
+        <main class="contenedor">
+            <div class="detalle__manga">
+                <div class="detalle__manga-contenedor-img">
+                    <img
+                        src="/img/img-manga/ELRepresentanteDeDios.jpg"
+                        alt="imagen_dios" />
+                </div>
+
+                <article class="about">
+                    <h1 class="title__text text-bold">
+                        El representante de dios en la tierra
+                    </h1>
+
+                    <p class="subtitle__text text-light">Sipnosis</p>
+                    
+                    <p class="text text-light">
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing
+                        elit, sed diam
+                        nonummy nibh euismod tincidunt ut laoreet dolore magna
+                        aliquam erat
+                        volutpat. Ut wisi enim ad minim veniam, quis nostrud
+                        exerci tation
+                        ullamcorper suscipit lobortis nisl ut aliquip ex ea
+                        commodo
+                        consequat. Duis autem vel eum iriure dolor in hendrerit
+                        in vulputate
+                        velit esse molestie consequat, vel illum dolore eu
+                        feugiat nulla
+                        facilisis at vero eros et accumsan et iusto odio
+                        dignissim qui
+                        blandit praesent luptatum zzril delenit augue duis
+                        dolore te feugait
+                        nulla facilisi.
+                    </p>
+
+                    <h3 class="subtitle__text-buttom text-bold">
+                        Autor: <span class="text-light">Desconocido</span>
+                        Genero:
+                        <span class="text-light">Misterio,Oscuro</span> Fecha de
+                        Publicación:
+                        <span class="text-light"> 22/Sept/2023</span>
+                        Distribuido por:
+                        <span class="text-light">Empresa Japonesa</span>
+                    </h3>
+                </article>
+            </div>
+
+            <section class="informacion__para__usuario">
+                <div class="contenido__info">
+                    <h4 class="title__info">Lectores</h4>
+                    <i class="fa-brands fa-readme"></i>
+                    <p class="title__info">2.5k</p>
+                </div>
+                <div class="contenido__info">
+                    <h4 class="title__info">Seguidores</h4>
+                    <i class="fa-solid fa-skull-crossbones"></i>
+                    <p class="title__info">2.5k</p>
+                </div>
+                <div class="contenido__info">
+                    <h4 class="title__info">Favoritos</h4>
+                    <i class="fa-solid fa-heart"></i>
+                    <p class="title__info">2.5k</p>
+                </div>
+                <div class="contenido__info">
+                    <h4 class="title__info">Compras Fisicas</h4>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <p class="title__info">2.5k</p>
+                </div>
+            </section>
+
+            <table class="tbl__capitulos">
+                <thead class="header__table">
+                    <tr>
+                        <th class="col title__info">Capitulo</th>
+                        <th class="col title__info">Nombre Capitulo</th>
+                        <th class="col title__info">Idioma</th>
+                        <th class="col title__info">Traducido Por</th>
+                        <th class="col title__info col__span"
+                            colspan="2">Opciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="table__body">
+                        <td class="row text__table-ligth">1</td>
+                        <td class="row text__table-ligth">aquello que no puedo
+                            olvidar</td>
+                        <td class="row text__table-ligth">Español</td>
+                        <td class="row text__table-ligth">tumangaonline</td>
+                        <td class="row text__table-ligth">
+                            visto
+                            <i class="fa-solid fa-eye row__icon"></i>
+                        </td>
+                        <td class="row text__table-ligth">
+                            favorito
+                            <i class="fa-solid fa-bookmark row__icon"></i>
+                        </td>
+                    </tr>
+                    <tr class="table__body">
+                        <td class="row text__table-ligth">1</td>
+                        <td class="row text__table-ligth">aquello que no puedo
+                            olvidar</td>
+                        <td class="row text__table-ligth">Español</td>
+                        <td class="row text__table-ligth">tumangaonline</td>
+                        <td class="row text__table-ligth">
+                            visto
+                            <i class="fa-solid fa-eye row__icon"></i>
+                        </td>
+                        <td class="row text__table-ligth">
+                            favorito
+                            <i class="fa-solid fa-bookmark row__icon"></i>
+                        </td>
+                    </tr>
+
+                    <tr class="table__body">
+                        <td class="row text__table-ligth">1</td>
+                        <td class="row text__table-ligth">aquello que no puedo
+                            olvidar</td>
+                        <td class="row text__table-ligth">Español</td>
+                        <td class="row text__table-ligth">tumangaonline</td>
+                        <td class="row text__table-ligth">
+                            visto
+                            <i class="fa-solid fa-eye row__icon"></i>
+                        </td>
+                        <td class="row text__table-ligth">
+                            favorito
+                            <i class="fa-solid fa-bookmark row__icon"></i>
+                        </td>
+                    </tr>
+
+                    <tr class="table__body">
+                        <td class="row text__table-ligth">1</td>
+                        <td class="row text__table-ligth">aquello que no puedo
+                            olvidar</td>
+                        <td class="row text__table-ligth">Español</td>
+                        <td class="row text__table-ligth">tumangaonline</td>
+                        <td class="row text__table-ligth">
+                            visto
+                            <i class="fa-solid fa-eye row__icon"></i>
+                        </td>
+                        <td class="row text__table-ligth">
+                            favorito
+                            <i class="fa-solid fa-bookmark row__icon"></i>
+                        </td>
+                    </tr>
+
+                    <tr class="table__body">
+                        <td class="row text__table-ligth">1</td>
+                        <td class="row text__table-ligth">aquello que no puedo
+                            olvidar</td>
+                        <td class="row text__table-ligth">Español</td>
+                        <td class="row text__table-ligth">tumangaonline</td>
+                        <td class="row text__table-ligth">
+                            visto
+                            <i class="fa-solid fa-eye row__icon"></i>
+                        </td>
+                        <td class="row text__table-ligth">
+                            favorito
+                            <i class="fa-solid fa-bookmark row__icon"></i>
+                        </td>
+                    </tr>
+
+                    <tr class="table__body">
+                        <td class="row text__table-ligth">1</td>
+                        <td class="row text__table-ligth">aquello que no puedo
+                            olvidar</td>
+                        <td class="row text__table-ligth">Español</td>
+                        <td class="row text__table-ligth">tumangaonline</td>
+                        <td class="row text__table-ligth">
+                            visto
+                            <i class="fa-solid fa-eye row__icon"></i>
+                        </td>
+                        <td class="row text__table-ligth">
+                            favorito
+                            <i class="fa-solid fa-bookmark row__icon"></i>
+                        </td>
+                    </tr>
+
+                    <tr class="table__body">
+                        <td class="row text__table-ligth">1</td>
+                        <td class="row text__table-ligth">aquello que no puedo
+                            olvidar</td>
+                        <td class="row text__table-ligth">Español</td>
+                        <td class="row text__table-ligth">tumangaonline</td>
+                        <td class="row text__table-ligth">
+                            visto
+                            <i class="fa-solid fa-eye row__icon"></i>
+                        </td>
+                        <td class="row text__table-ligth">
+                            favorito
+                            <i class="fa-solid fa-bookmark row__icon"></i>
+                        </td>
+                    </tr>
+
+                    <tr class="table__body">
+                        <td class="row text__table-ligth">1</td>
+                        <td class="row text__table-ligth">aquello que no puedo
+                            olvidar</td>
+                        <td class="row text__table-ligth">Español</td>
+                        <td class="row text__table-ligth">tumangaonline</td>
+                        <td class="row text__table-ligth">
+                            visto
+                            <i class="fa-solid fa-eye row__icon"></i>
+                        </td>
+                        <td class="row text__table-ligth">
+                            favorito
+                            <i class="fa-solid fa-bookmark row__icon"></i>
+                        </td>
+                    </tr>
+
+                    <tr class="table__body">
+                        <td class="row text__table-ligth">1</td>
+                        <td class="row text__table-ligth">aquello que no puedo
+                            olvidar</td>
+                        <td class="row text__table-ligth">Español</td>
+                        <td class="row text__table-ligth">tumangaonline</td>
+                        <td class="row text__table-ligth">
+                            visto
+                            <i class="fa-solid fa-eye row__icon"></i>
+                        </td>
+                        <td class="row text__table-ligth">
+                            favorito
+                            <i class="fa-solid fa-bookmark row__icon"></i>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+
+        <!-- footer -->
+        <footer>
+            <nav class="footer__nav">
+                <h3 class="titulo">informacion</h3>
+                <a href="#" class="link">informacion legal</a>
+                <a href="#" class="link">privacida</a>
+                <a href="#" class="link">privacida</a>
+            </nav>
+            <nav class="footer__nav">
+                <h3 class="titulo">informacion extra</h3>
+                <a href="#" class="link">TaManga Online</a>
+                <a href="#" class="link">Tachillomi</a>
+                <a href="#" class="link">queloque</a>
+            </nav>
+            <div class="copy">
+                <span>&copy; 2023 Todos los derechos reservados | Diseñado por:
+                    <span>Jhon</span></span>
+            </div>
+
+            <div class="redes__sociales">
+                <a href="#" class="link__redes"><i
+                        class="fab fa-facebook icono"></i></a>
+                <a href="#" class="link__redes"><i
+                        class="fab fa-instagram icono"></i></a>
+            </div>
+        </footer>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+        <script src="/js/funcionalidades.js" defer></script>
+    </body>
+</html>

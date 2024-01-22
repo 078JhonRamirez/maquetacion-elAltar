@@ -27,7 +27,7 @@
     <body>
         <header>
             <div class="header__logo">
-                <img src="/img/logo.png" alt="ElALtar">
+                <img class="resolucion__img" src="/img/logo.png" alt="ElALtar">
             </div>
 
             <button id="abrirVentana" class="desplegar__menu"><i
@@ -35,22 +35,28 @@
             <nav id="nav" class="header__nav">
                 <button id="cerrarVentana" class="cerrar__menu"><i
                         class="fa-solid fa-xmark"></i></button>
-                <a href="/index.html">inicio</a>
+                <a href="#">inicio</a>
                 <a href="#">productos</a>
                 <a href="#">Contactanos</a>
                 <a href="#">Blog</a>
             </nav>
 
             <nav class="login__header">
-                <a href="#"><img src="/img/logo.png"></a>
+                <a  href="/auth/login.html"><img class="resolucion__img" src="/img/logo.png" alt="elAltar"></a>
             </nav>
 
         </header>
-        <!-- fin header -->
-        <div class="contenedor">
-            <div class="parte__superior"></div>
 
-            <section class="subcontenedor__formulario">
+          <!-- textura -->
+          <img class="textura-img" src="/img/fondo-header.png" alt="fondo">
+        <!-- fin header -->
+        <main>
+            <div class="parte__superior">
+                <div class="efecto__arco"></div>
+            </div>
+
+
+            <div class="subcontenedor__formulario">
 
                 <div class="imagen__superior__formulario">
                     <img src="/icon/personaje-solid.svg" alt="Tú">
@@ -61,10 +67,10 @@
                         <legend class="titulo__formulario">Bienvenido</legend>
 
                         <p class="contenido__inputs">
-                            <label for="input__usuario"><i
+                            <label for="input__correo"><i
                                     class="fa-solid fa-envelope"></i></label>
                             <input type="email" name="usuario"
-                                class="control__inputs" id="input__usuario"
+                                class="control__inputs" id="input__correo"
                                 placeholder="Correo">
                         </p>
 
@@ -78,27 +84,33 @@
                             href="./registro.html">Registrate</a></p>
                 </div>
 
-            </section>
+            </div>
 
-        </div>
+        </main>
 
         <!-- footer -->
         <footer>
             <nav class="footer__nav">
                 <h3 class="titulo">informacion</h3>
-                <a href class="link">informacion legal</a>
-                <a href class="link">privacida</a>
+                <a href="#" class="link">informacion legal</a>
+                <a href="#" class="link">privacida</a>
+                <a href="#" class="link">privacida</a>
+            </nav>
+            <nav class="footer__nav">
+                <h3 class="titulo">informacion extra</h3>
+                <a href="#" class="link">TaManga Online</a>
+                <a href="#" class="link">Tachillomi</a>
+                <a href="#" class="link">queloque</a>
             </nav>
             <div class="copy">
-                <span>&copy; 2023 Todos los derechos reservados | Diseñado por:
-                    <name>Jhon</span>
+                <span>&copy; 2023 Todos los derechos reservados | Diseñado
+                    por:
+                    <span>Jhon</span></span>
                 </div>
 
                 <div class="redes__sociales">
-                    <a href class="link__redes"><i id="facebook"
-                            class="fab fa-facebook icono"></i><br /></a>
-                    <a href class="link__redes"><i id="instagram"
-                            class="fab fa-instagram icono"></i></li></a>
+                    <a href="#" class="link__redes"><i class="fab fa-facebook icono"></i></a>
+                    <a href="#" class="link__redes"><i class="fab fa-instagram icono"></i></a>
             </div>
         </footer>
 
