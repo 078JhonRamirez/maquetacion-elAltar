@@ -49,13 +49,10 @@
         <img class="resolucion__img" src="/img/logo.png" alt="ElALtar" />
       </div>
 
-      <button id="abrirVentana" class="desplegar__menu">
-        <i class="fa-solid fa-bars"></i>
-      </button>
       <nav id="nav" class="header__nav">
-        <button id="cerrarVentana" class="cerrar__menu">
+        <a id="cerrarVentana" class="desplegar__menu cerrar__menu">
           <i class="fa-solid fa-xmark"></i>
-        </button>
+        </a>
         <a href="#">inicio</a>
         <a href="#">productos</a>
         <a href="#">Contactanos</a>
@@ -67,6 +64,11 @@
           ><img class="resolucion__img" src="img/logo.png" alt="login"
         /></a>
       </nav>
+
+      <a href="#" id="abrirVentana" class="desplegar__menu">
+        <i class="fa-solid fa-bars"></i>
+      </a>
+
     </header>
     <!-- fin header -->
 
@@ -109,18 +111,18 @@
 
           <div class="swiper-slide">
             <img src="img/slider/SPYxFAMILY.jpg" alt="imagen" />
-          </div>
+          <!-- </div> -->
           <!-- fin de las imagen del slider -->
         </div>
       </div>
     </main>
 
-    <section class="semana">
+    <section class="semana" >
       <div class="titulo__semana">
         <h2 class="title__text">Los Mas Calificados</h2>
       </div>
 
-      <div class="card__container">
+      <div class="card__container"  id="noticias">
         <article class="cards">
           <div class="titulo__obra">
             <h2>El Mata demonios con la espada de hierro</h2>
@@ -640,7 +642,23 @@
       </div>
     </footer>
 
+    <script type="text/javascript" charset="utf-8">
+      (function (g, e, n, es, ys) {
+        g['_genesysJs'] = e;
+        g[e] = g[e] || function () {
+          (g[e].q = g[e].q || []).push(arguments)
+        };
+        g[e].t = 1 * new Date();
+        g[e].c = es;
+        ys = document.createElement('script'); ys.async = 1; ys.src = n; ys.charset = 'utf-8'; document.head.appendChild(ys);
+      })(window, 'Genesys', 'https://apps.mypurecloud.com/genesys-bootstrap/genesys.min.js', {
+        environment: 'prod',
+        deploymentId: 'dc08daa5-47a2-4f74-b442-e442ced02ffa'
+      });
+    </script>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="js/funcionalidades.js" defer></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>
