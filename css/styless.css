@@ -44,6 +44,7 @@ body {
 
 /* declaracion de clases para textos  o clases generales*/
 
+
 .text-light,
 .title__text {
     margin: 8px;
@@ -442,7 +443,7 @@ header>.header__nav {
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    /* object-fit: cover; */
 }
 
 
@@ -523,7 +524,7 @@ header>.header__nav {
 /* /* textura__fondo */
 .textura-img {
     position: absolute;
-    width: 100%;
+    width: 100vw;
     height: 100%;
     object-fit: cover;
     bottom: 0;
