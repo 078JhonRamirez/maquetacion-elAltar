@@ -82,36 +82,9 @@
       <h2 class="subtitle__text">Noticias de la semana</h2>
 
       <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
+        <div id="noticias" class="swiper-wrapper">
           <!-- aqui van las imagen del slider -->
 
-          <div class="swiper-slide">
-            <img src="img/slider/blackcover.jpg" alt="imagen" />
-          </div>
-
-          <div class="swiper-slide">
-            <img src="img/slider/chaisawMan.jpg" alt="imagen" />
-          </div>
-
-          <div class="swiper-slide">
-            <img src="img/slider/demonSlayer.jpg" alt="imagen" />
-          </div>
-
-          <div class="swiper-slide">
-            <img src="img/slider/fireforse.jpg" alt="imagen" />
-          </div>
-
-          <div class="swiper-slide">
-            <img src="img/slider/fireforse.jpg" alt="imagen" />
-          </div>
-
-          <div class="swiper-slide">
-            <img src="img/slider/jujutsuKaisen.jpg" alt="imagen" />
-          </div>
-
-          <div class="swiper-slide">
-            <img src="img/slider/SPYxFAMILY.jpg" alt="imagen" />
-          <!-- </div> -->
           <!-- fin de las imagen del slider -->
         </div>
       </div>
@@ -122,120 +95,9 @@
         <h2 class="title__text">Los Mas Calificados</h2>
       </div>
 
-      <div class="card__container"  id="noticias">
-        <article class="cards">
-          <div class="titulo__obra">
-            <h2>El Mata demonios con la espada de hierro</h2>
-          </div>
-          <i class="fa-solid fa-star icon__calificacion">
-            12 <span>Mil</span></i
-          >
-          <div class="contenedor__imagen">
-            <img
-              class="resolucion__img-card"
-              src="img/slider/blackcover.jpg"
-              alt="imagen"
-            />
-          </div>
-          <div class="agregar__favorito">
-            <i class="fa-solid fa-heart"> <span>agregar favorito</span></i>
-          </div>
-        </article>
+      <div id="top" class="card__container" >
 
-        <article class="cards">
-          <div class="titulo__obra">
-            <h2>El Mata demonios con la espada de hierro</h2>
-          </div>
-          <i class="fa-solid fa-star icon__calificacion">
-            12 <span>Mil</span></i
-          >
-          <div class="contenedor__imagen">
-            <img
-              class="resolucion__img-card"
-              src="img/slider/fireforse.jpg"
-              alt="imagen"
-            />
-          </div>
-          <div class="agregar__favorito">
-            <i class="fa-solid fa-heart"> <span>agregar favorito</span></i>
-          </div>
-        </article>
 
-        <article class="cards">
-          <div class="titulo__obra">
-            <h2>El Mata demonios con la espada de hierro</h2>
-          </div>
-          <i class="fa-solid fa-star icon__calificacion">
-            12 <span>Mil</span></i
-          >
-          <div class="contenedor__imagen">
-            <img
-              class="resolucion__img-card"
-              src="img/slider/chaisawMan.jpg"
-              alt="imagen"
-            />
-          </div>
-          <div class="agregar__favorito">
-            <i class="fa-solid fa-heart"> <span>agregar favorito</span></i>
-          </div>
-        </article>
-
-        <article class="cards">
-          <div class="titulo__obra">
-            <h2>El Mata demonios con la espada de hierro</h2>
-          </div>
-          <i class="fa-solid fa-star icon__calificacion">
-            12 <span>Mil</span></i
-          >
-          <div class="contenedor__imagen">
-            <img
-              class="resolucion__img-card"
-              src="img/slider/demonSlayer.jpg"
-              alt="imagen"
-            />
-          </div>
-          <div class="agregar__favorito">
-            <i class="fa-solid fa-heart"> <span>agregar favorito</span></i>
-          </div>
-        </article>
-
-        <article class="cards">
-          <div class="titulo__obra">
-            <h2>El Mata demonios con la espada de hierro</h2>
-          </div>
-          <i class="fa-solid fa-star icon__calificacion">
-            12 <span>Mil</span></i
-          >
-          <div class="contenedor__imagen">
-            <img
-              class="resolucion__img-card"
-              src="img/slider/SPYxFAMILY.jpg"
-              alt="imagen"
-            />
-          </div>
-          <div class="agregar__favorito">
-            <i class="fa-solid fa-heart"> <span>agregar favorito</span></i>
-          </div>
-        </article>
-
-        <article class="cards">
-          <div class="titulo__obra">
-            <h2>El Mata demonios con la espada de hierro</h2>
-          </div>
-          <i class="fa-solid fa-star icon__calificacion">
-            12 <span>Mil</span></i
-          >
-          <div class="contenedor__imagen">
-            <img
-              class="resolucion__img-card"
-              src="img/slider/fireforse.jpg"
-              alt="imagen"
-            />
-          </div>
-          <div class="agregar__favorito">
-            <i class="fa-solid fa-heart"> <span>agregar favorito</span></i>
-          </div>
-        </article>
       </div>
     </section>
 
@@ -243,13 +105,13 @@
       <div class="sub__navegacion">
         <div class="filtro">
           <p class="texto__filtro">Filtrar por:</p>
-          <select class="seleccion__filtro">
-            <option value>Mejor Calificados</option>
-            <option value>Ultimos agregados</option>
-            <option value>Terror</option>
-            <option value>Suspenso</option>
-            <option value>accion</option>
-            <option value>random</option>
+          <select id="filtro" class="seleccion__filtro">
+            <option value="tv">Televisión</option>
+            <option value="movie">Pelicula</option>
+            <option value="ova">Ova</option>
+            <option value="special">Especial</option>
+            <option value="tv_special">Super Espacial</option>
+            <option value="ona">Random</option>
           </select>
         </div>
 
@@ -301,24 +163,11 @@
       </div>
     </footer>
     
-        <script type="text/javascript" charset="utf-8">
-          (function (g, e, n, es, ys) {
-            g['_genesysJs'] = e;
-            g[e] = g[e] || function () {
-              (g[e].q = g[e].q || []).push(arguments)
-            };
-            g[e].t = 1 * new Date();
-            g[e].c = es;
-            ys = document.createElement('script'); ys.async = 1; ys.src = n; ys.charset = 'utf-8'; document.head.appendChild(ys);
-          })(window, 'Genesys', 'https://apps.mypurecloud.com/genesys-bootstrap/genesys.min.js', {
-            environment: 'prod',
-            deploymentId: '5ae5794b-7a82-4014-9191-f2fa5dc1adc5'
-          });
-    </script>
+        
   
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="js/funcionalidades.js" defer></script>
-    <script src="js/Jinkan.js" defer></script>
+    <script type="module" src="js/componentes.js" defer></script>
   </body>
 </html>

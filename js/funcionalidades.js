@@ -23,15 +23,15 @@ const abrir = document.querySelector("#abrirVentana");
 const cerrar = document.querySelector('#cerrarVentana');
 const nav = document.querySelector("#nav")
 
-abrir.addEventListener('click',()=>{
-    nav.classList.add("visible");
-});
+// abrir.addEventListener('click',()=>{
+//     nav.classList.add("visible");
+// });
 
-cerrar.addEventListener('click',()=>{
-    nav.classList.remove("visible");
-});
+// cerrar.addEventListener('click',()=>{
+//     nav.classList.remove("visible");
+// });
 
-cerrar.onclick = (function(evento){
-    evento.classList.remove("visible");
+// cerrar.onclick = (function(evento){
+//     evento.classList.remove("visible");
 
-})
+// })
